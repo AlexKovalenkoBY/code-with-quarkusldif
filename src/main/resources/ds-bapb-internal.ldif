@@ -1,0 +1,77 @@
+# Корневой элемент домена ds.bapb.internal
+dn: dc=ds,dc=bapb,dc=internal
+objectClass: top
+objectClass: domain
+dc: ds
+
+# Организационная единица 'users'
+dn: ou=users,dc=ds,dc=bapb,dc=internal
+objectClass: top
+objectClass: organizationalUnit
+ou: users
+
+# Организационная единица 'groups'
+dn: ou=groups,dc=ds,dc=bapb,dc=internal
+objectClass: top
+objectClass: organizationalUnit
+ou: groups
+
+# Группа '8'
+dn: ou=8,dc=ds,dc=bapb,dc=internal
+objectClass: top
+objectClass: organizationalUnit
+ou: 8
+
+# Группа 'UVA-U'
+dn: ou=UVA-U,ou=8,dc=ds,dc=bapb,dc=internal
+objectClass: top
+objectClass: organizationalUnit
+ou: UVA-U
+
+# Пользователь для группы 'UVA-U'
+dn: cn=uvauser,ou=UVA-U,ou=8,dc=ds,dc=bapb,dc=internal
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: uvauser
+sn: Uvauser
+givenName: User
+displayName: Uvauser
+userPassword: password
+
+# Группа 'PPO-U'
+dn: ou=PPO-U,ou=8,dc=ds,dc=bapb,dc=internal
+objectClass: top
+objectClass: organizationalUnit
+ou: PPO-U
+
+# Пользователь для группы 'PPO-U'
+dn: cn=ppouser,ou=PPO-U,ou=8,dc=ds,dc=bapb,dc=internal
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: ppouser
+sn: Ppouser
+givenName: User
+displayName: Ppouser
+userPassword: password
+
+# Группа 'DK-U'
+dn: ou=DK-U,ou=8,dc=ds,dc=bapb,dc=internal
+objectClass: top
+objectClass: organizationalUnit
+ou: DK-U
+
+# Пользователь для группы 'DK-U'
+dn: cn=dkuser,ou=DK-U,ou=8,dc=ds,dc=bapb,dc=internal
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: dkuser
+sn: Dkuser
+givenName: User
+displayName: Dkuser
+userPassword: password
